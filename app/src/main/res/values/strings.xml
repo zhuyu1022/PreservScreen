@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">棉纱仓库</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="account_can_not_be_null">账号不能为空，请重新输入！</string>
+    <string name="application_has_new_version_need_force_update">应用有新版本，需强制升级！</string>
+    <string name="download_fail">下载失败！</string>
+    <string name="application_has_new_version_need_update">应用有新版本，是否立刻升级？</string>
+    <string name="no_update_config_please_contact_manager">没有维护更新配置，请联系管理员！</string>
+    <string name="data_parse_exception">数据解析异常</string>
+    <string name="login_fail">登陆失败</string>
+    <string name="app_title">坯布检验系统</string>
+    <string name="input_account">请输入工号</string>
+    <string name="login">登录</string>
+    <string name="monadno_not_right">三联单号格式不正确，请重新扫描！</string>
+    <string name="please_scan_monadno">请扫描三联单号！</string>
+    <string name="monadno_is_not_exist">三联单号不存在</string>
+    <string name="monadno_has_bean_used">三联号已被使用</string>
+    <string name="monadno_checked_fail_and_tray_again">三联单号校验不成功，请重新输入，查询后再试！</string>
+    <string name="query_sjzd_fail">查询数据字典失败！</string>
+    <string name="query_fail">查询失败！</string>
+    <string name="insert_success">录入成功！</string>
+    <string name="insert_fail">录入失败！</string>
+    <string name="pishu">匹数：</string>
+    <string name="zhaobugong">照布工：</string>
+    <string name="monadno">三联号：</string>
+    <string name="clothno">布号：</string>
+    <string name="batchNo">批号：</string>
+    <string name="weight">匹重：</string>
+    <string name="meterLong">米长：</string>
+    <string name="grade">班次：</string>
+    <string name="flaw_info">疵点信息</string>
+    <string name="flaw_type">疵点类型</string>
+    <string name="flaw_num">疵点数量</string>
+    <string name="operation">操作</string>
+    <string name="remark">备注</string>
+    <string name="confirm_and_insert_next_one">确认并录入下一条</string>
+    <string name="back">返回</string>
+    <string name="tips">提示</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="language">中文</string>
+    <string name="delete">删除</string>
+
+</resources>

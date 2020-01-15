@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.hoperun.PreservScreen"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+    buildTypes {
+        release {
+            //在这里添加：
+            lintOptions {
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        def buildType = variant.buildType.name
+        def flavorName = variant.flavorName
+        def createTime = new Date().format("YYYY-MM-dd", TimeZone.getTimeZone("GMT+08:00"))
+        variant.outputs.all {
+            outputFileName = "PreservScreen_" + buildType + "_v" + defaultConfig.versionName + "_" + createTime + ".apk"
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(include: '*.jar', dir: 'libs')
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation "org.jetbrains.anko:anko:0.10.8"
+    implementation 'com.blankj:utilcodex:1.26.0'
+    //万能Adapter
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.47'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.zhuyu1022:Download:V1.0.1'
+
+}
